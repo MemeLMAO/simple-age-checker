@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Verification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <div class="card">
+            <h1 class="title">Age Verification</h1>
+
+            <div class="input-group">
+                <div class="input-field">
+                    <label for="day">Day</label>
+                    <input id="day" type="number" min="1" max="31" placeholder="DD">
+                </div>
+                <div class="input-field">
+                    <label for="month">Month</label>
+                    <input id="month" type="number" min="1" max="12" placeholder="MM">
+                </div>
+                <div class="input-field">
+                    <label for="year">Year</label>
+                    <input id="year" type="number" min="1900" placeholder="YYYY">
+                </div>
+            </div>
+
+            <button id="checkButton" class="button">Check Eligibility</button>
+
+            <div id="resultContainer" class="result-container hidden">
+                <p id="resultMessage" class="result-message"></p>
+                <div id="birthdayLinkContainer" class="birthday-link-container">
+                    <a href="birthday.html" class="birthday-link">
+                        🎂 Oh hey, it's your birthday today! Please click me 🎂
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
